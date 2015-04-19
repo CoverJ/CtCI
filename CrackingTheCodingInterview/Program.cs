@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CrackingTheCodingInterview
 {
@@ -6,7 +7,7 @@ namespace CrackingTheCodingInterview
 	{
 		public static void Main (string[] args)
 		{
-			Console.WriteLine ("Hello World!");
+			var c01q01 = new Chapter_01Q01 ();
 		}
 	}
 }
