@@ -5,9 +5,9 @@ namespace CrackingTheCodingInterview
 {
 	public class Chapter_01Q03
 	{
+		// Given two string write a method to decide if one is a permutation of the other
 		public Chapter_01Q03 ()
 		{
-			// Given two string write a method to decide if one is a permutation of the other
 			string input1 = "";
 			string input2 = "";
 
@@ -38,7 +38,6 @@ namespace CrackingTheCodingInterview
 					}
 					catch {
 						permutation = false;
-
 					}
 				}
 

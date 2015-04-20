@@ -4,6 +4,8 @@ namespace CrackingTheCodingInterview
 {
 	public class Chapter_01Q01
 	{
+		// Implement an algorithm to determine if a string has all unique characters.
+		// what if you cannot use additional data structures?
 		public Chapter_01Q01 ()
 		{
 			string input = "";

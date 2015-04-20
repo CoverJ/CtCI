@@ -38,6 +38,7 @@
     <Compile Include="Chapter_01Q01.cs" />
     <Compile Include="Chapter_01Q02.cs" />
     <Compile Include="Chapter_01Q03.cs" />
+    <Compile Include="Chapter_01Q04.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

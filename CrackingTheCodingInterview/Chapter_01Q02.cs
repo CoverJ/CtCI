@@ -4,9 +4,9 @@ namespace CrackingTheCodingInterview
 {
 	public class Chapter_01Q02
 	{
+		// reverse a null terminated string
 		public Chapter_01Q02 ()
 		{
-			// reverse a null terminated string
 			string input = "";
 			while (input != "0") {
 				Console.WriteLine ("Enter string to be reversed:");
