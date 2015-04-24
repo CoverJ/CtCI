@@ -42,6 +42,7 @@
     <Compile Include="Chapter_01Q05.cs" />
     <Compile Include="Chapter_01Q06.cs" />
     <Compile Include="ITA_InsertionSort.cs" />
+    <Compile Include="ITA_MergeSort.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
