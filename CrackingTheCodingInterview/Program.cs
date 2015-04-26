@@ -7,7 +7,18 @@ namespace CrackingTheCodingInterview
 	{
 		public static void Main (string[] args)
 		{
-			var insertionSort = new ITA_InsertionSort ();
+			//var insertionSort = new ITA_InsertionSort ();
+
+			var linkedList = new DS_LinkedList ();
+			linkedList.AddToLinkedList (1);
+			linkedList.AddToLinkedList (2);
+			linkedList.AddToLinkedList (3);
+			linkedList.AddToLinkedList (4);
+			linkedList.AddToLinkedList (5);
+			linkedList.AddToLinkedList (6);
+			linkedList.AddToLinkedList (7);
+			linkedList.AddToLinkedList (8);
+			linkedList.PrintAll ();
 
 			//var c01q01 = new Chapter_01Q01 ();
 			//var c01q02 = new Chapter_01Q02 ();
