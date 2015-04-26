@@ -9,6 +9,8 @@ namespace CrackingTheCodingInterview
 		{
 			//var insertionSort = new ITA_InsertionSort ();
 
+			#region Singularly Linked List
+			/*
 			var linkedList = new DS_LinkedList ();
 			linkedList.AddToLinkedList (1);
 			linkedList.AddToLinkedList (2);
@@ -19,6 +21,16 @@ namespace CrackingTheCodingInterview
 			linkedList.AddToLinkedList (7);
 			linkedList.AddToLinkedList (8);
 			linkedList.PrintAll ();
+
+			linkedList.RemoveFromLinkedList (3);
+			Console.WriteLine ("Removed 3");
+			linkedList.PrintAll ();
+
+			linkedList.RemoveFromLinkedList (8);
+			Console.WriteLine ("Removed 8, the head");
+			linkedList.PrintAll ();
+			*/
+			#endregion
 
 			//var c01q01 = new Chapter_01Q01 ();
 			//var c01q02 = new Chapter_01Q02 ();
