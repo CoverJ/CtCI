@@ -1,5 +1,5 @@
 # CtCI
-Cracking the Coding Interview question solutions
+Cracking the Coding Interview question solutions and C# implementations of numerous data structures
 
 # Data Structures
 
