@@ -33,7 +33,7 @@ namespace CrackingTheCodingInterview
 			#endregion
 
 			#region Stack
-			var stack = new DS_Stack();
+			/*var stack = new DS_Stack();
 			stack.Push(1);
 			stack.Push(2);
 			stack.Push(3);
@@ -41,6 +41,7 @@ namespace CrackingTheCodingInterview
 			Console.WriteLine("Peek: " + stack.Peek()); // expect 2
 			stack.Push(100);
 			Console.WriteLine("Peek: " + stack.Peek()); // expect 100
+			*/
 			#endregion
 
 			//var c01q01 = new Chapter_01Q01 ();
@@ -48,7 +49,7 @@ namespace CrackingTheCodingInterview
 			//var c01q03 = new Chapter_01Q03 ();
 			//var c01q04 = new Chapter_01Q04();
 			//var c01q05 = new Chapter_01Q05();
-			//var c01q06 = new Chapter_01Q06();
+			var c01q06 = new Chapter_01Q06();
 		}
 	}
 }

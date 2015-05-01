@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrackingTheCodingInterview", "CrackingTheCodingInterview\CrackingTheCodingInterview.csproj", "{08DF9EC2-821E-4500-9AE4-EC1FAB9FFD26}"
 EndProject
+Project("{2857B73E-F847-4B02-9238-064979017E93}") = "DataStructuresInCPP", "DataStructuresInCPP\DataStructuresInCPP.cproj", "{3254FA5D-808E-4B88-9648-7A4C6E850E08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +15,9 @@ Global
 		{08DF9EC2-821E-4500-9AE4-EC1FAB9FFD26}.Debug|x86.Build.0 = Debug|x86
 		{08DF9EC2-821E-4500-9AE4-EC1FAB9FFD26}.Release|x86.ActiveCfg = Release|x86
 		{08DF9EC2-821E-4500-9AE4-EC1FAB9FFD26}.Release|x86.Build.0 = Release|x86
+		{3254FA5D-808E-4B88-9648-7A4C6E850E08}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3254FA5D-808E-4B88-9648-7A4C6E850E08}.Debug|x86.Build.0 = Debug|Any CPU
+		{3254FA5D-808E-4B88-9648-7A4C6E850E08}.Release|x86.ActiveCfg = Release|Any CPU
+		{3254FA5D-808E-4B88-9648-7A4C6E850E08}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -8,9 +8,24 @@ namespace CrackingTheCodingInterview
 	// 90 degress. Can you do this in place?	
 	public class Chapter_01Q06
 	{
+		// test matrix - working
+		/*int[,] matrix = new int[9, 9] { {1,2,3,4,5,6,7,8,9}, {1,2,3,4,5,6,7,8,9}, {1,2,3,4,5,6,7,8,9}, {1,2,3,4,5,6,7,8,9}, 
+			{1,2,3,4,5,6,7,8,9},{1,2,3,4,5,6,7,8,9},{1,2,3,4,5,6,7,8,9},{1,2,3,4,5,6,7,8,9},{1,2,3,4,5,6,7,8,9}};*/
+		int n = 4;
+		int[,] m2 = new int[4,4] { {1,2,3,4}, {1,2,3,4}, {1,2,3,4}, {1,2,3,4} };
+	
 		public Chapter_01Q06 ()
 		{
-			ProduceMatrix ();
+			PrintMatrix (m2);
+			Console.WriteLine ();
+			RotateMatrix (m2, n);
+			Console.WriteLine ();
+			RotateMatrix (m2, n);
+			Console.WriteLine ();
+			RotateMatrix (m2, n);
+			Console.WriteLine ();
+			RotateMatrix (m2, n);
+
 		}
 
 		// 1 2 3 4 5  1 1 1 1 1  1 2 3 4  1 1 1 1  0 0 0 0  3 2 1 0
@@ -19,25 +34,29 @@ namespace CrackingTheCodingInterview
 		// 1 2 3 4 5  4 4 4 4 4  1 2 3 4  4 4 4 4  3 3 3 3  3 2 1 0
 		// 1 2 3 4 5  5 5 5 5 5
 
-		private void ProduceMatrix()
+		private void RotateMatrix(int[,] matrix, int n)
 		{			
-			var matrix = new int[4, 4] { {1,2,3,4}, {1,2,3,4}, {1,2,3,4}, {1,2,3,4} };
-			var newMatrix = new int[4, 4];
+			for (int layer = 0; layer < n / 2; layer++) {
+				int first = layer;
+				int last = n - 1 - layer;
 
-			// rotate matrix
-			// 0,0 > 0,3  // 1,0 > 0,2    // 0,0 > 0,3  // 0,1 > 1,3
-			// 0,1 > 1,3  // 1,1 > 1,2    // 1,0 > 0,2  // 1,1 > 1,2
-			// 0,2 > 2,3  // 1,2 > 2,2    // 2,0 > 0,1  // 2,1 > 1,1
-			// 0,3 > 3,3  // 1,3 > 3,2    // 3,0 > 0,0  // 3,1 > 1,0
+				for (int i = first; i < last; i++) {
+					int offset = i - first;
+					// save top rows value, this lets us perform the operation in place, using O(1) memory instead of O(n)
+					int top = matrix [first, i];
 
-			for (int i = 0; i < 4; i++) { // rows
-				for (int j = 0; j < 4; j++) { // columns
-					newMatrix[i,j] = matrix[j, (i - 1) % 4];
+					// lhs to top
+					matrix[first, i] = matrix[last - offset, first];
+					// bottom to lhs
+					matrix[last-offset, first] = matrix[last, last-offset];
+					// rhs to bottom
+					matrix[last,last-offset] = matrix [i, last];
+					// top to rhs aka put in the previously saved value.
+					matrix[i, last] = top;
 				}
 			}
+
 			PrintMatrix (matrix);
-			Console.WriteLine ();
-			PrintMatrix (newMatrix);
 		}
 
 		private void PrintMatrix(int[,] a)
