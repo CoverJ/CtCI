@@ -50,7 +50,8 @@ namespace CrackingTheCodingInterview
 			//var c01q04 = new Chapter_01Q04();
 			//var c01q05 = new Chapter_01Q05();
 			//var c01q06 = new Chapter_01Q06();
-			var c01q07 = new Chapter_01Q07();
+			//var c01q07 = new Chapter_01Q07();
+			var c01q08 = new Chapter_01Q08();
 		}
 	}
 }

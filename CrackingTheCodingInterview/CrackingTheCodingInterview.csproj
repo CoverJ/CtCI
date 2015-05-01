@@ -46,6 +46,7 @@
     <Compile Include="DS_LinkedList.cs" />
     <Compile Include="DS_Stack.cs" />
     <Compile Include="Chapter_01Q07.cs" />
+    <Compile Include="Chapter_01Q08.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
