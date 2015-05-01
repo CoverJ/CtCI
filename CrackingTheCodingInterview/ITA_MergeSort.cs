@@ -6,6 +6,7 @@ namespace CrackingTheCodingInterview
 	{
 		public ITA_MergeSort ()
 		{
+			
 		}
 	}
 }

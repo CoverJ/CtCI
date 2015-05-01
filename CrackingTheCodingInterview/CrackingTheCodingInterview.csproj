@@ -45,6 +45,7 @@
     <Compile Include="ITA_MergeSort.cs" />
     <Compile Include="DS_LinkedList.cs" />
     <Compile Include="DS_Stack.cs" />
+    <Compile Include="Chapter_01Q07.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
