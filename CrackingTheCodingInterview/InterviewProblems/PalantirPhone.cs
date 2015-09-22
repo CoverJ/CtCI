@@ -21,7 +21,7 @@ namespace CrackingTheCodingInterview.InterviewProblems
      */
     class PalantirPhone
     {   
-        static void Main()
+        static void solution()
         {
             #region TEST DATA
             var mum = new FTNode();
