@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using CrackingTheCodingInterview.InterviewProblems;
 
 namespace CrackingTheCodingInterview
 {
@@ -55,7 +56,9 @@ namespace CrackingTheCodingInterview
 
 			//var c02q01 = new Chapter_02Q01 ();
 
-			var insertionSort = new Sort_Insertion ();
+			//var insertionSort = new Sort_Insertion ();
+
+            FizzBuzz.solution();
 		}
 	}
 }
